@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.min.js"></script>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<p style="position:absolute">123456</p>
+</body>
+<script>
+	var p=$("p");
+	$(window).mousemove(function(ev){
+		p.css({
+			left:ev.clientX + "px",
+			top:ev.clientY + "px"
+		})
+	})
+</script>
+</html>
